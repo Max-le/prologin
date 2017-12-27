@@ -6,6 +6,9 @@ N  = 0
 """ position d'un client """
 x = 0
 
+
+input(M1)
+input(M2)
 """1. Trouver point ou x est indifférent d'aller chez M1 ou M2."""
 """-> Point ou dist(x,M1) = dist(x,M2)
 """
@@ -33,4 +36,6 @@ if equi > (N/2):
 if equi < (N/2):
 	winner = 2
 else:
-winner = 0
+        winner = 0
+
+print(winner)
