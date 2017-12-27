@@ -12,5 +12,7 @@ x = 0
 
 """Returne distance entre 2 points"""
 def dist(a, b):
+	d = 0
 	d = abs(a - b)
 	return d
+
