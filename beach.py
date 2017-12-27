@@ -2,35 +2,21 @@
 M1 = 50
 M2 = 250
 N  = 500
+"""AIRE ENTRE M1 ET M2 = (M2-M1)"""
 
-""" position d'un client """
-x = 0
+"""Aire de M1"""
+AM1 = M1+((M2-M1)/2)
 
-"""1. Trouver point ou x est indifférent d'aller chez M1 ou M2."""
-"""-> Point ou dist(x,M1) = dist(x,M2)
-"""
+"""Aire de M2"""
+AM2 = N - M2  +((M2-M1)/2)
 
-
-
-""" x ( client ) se démarre de N = 0."""
-while abs(M1-x) != abs(M2-x):
-
-	"""le client avance"""
-	x = x + 1
-	
-
-""" Ici le client est aussi proche de M1 que M2. (equi)"""
-equi = x
-print("equi= " , equi)
-
-""" Qui a la plus grosse ? (influence)"""
-print(N/2)
-if equi > N/2:
+winner = 0
+if AM2 < AM1:
 	winner = 1
-
-elif equi < N/2:
-	winner = 2
-else :
-        winner = 0
-        
+elif AM2 == AM1:
+	winner = 0
+else:
+	print("Error.")
+print(AM1)
+print(AM2)
 print(winner)
