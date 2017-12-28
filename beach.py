@@ -1,3 +1,6 @@
+# Petit programme pour calculer si M1 ou M2 a le plus d'influence sur la plage.
+
+
 """Entrée"""
 
 M1 = float(input())
