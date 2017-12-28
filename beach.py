@@ -20,6 +20,6 @@ elif AM2 > AM1:
 elif AM1 == AM2:
 	winner = 0
 else:
-	print("Something went wrong...")
+	print("Something went wrong..")
 
 print(winner)
